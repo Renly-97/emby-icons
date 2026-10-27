@@ -1,0 +1,69 @@
+{
+  "updated_at_utc": "2026-10-27T02:23:56.084168+00:00",
+  "libraries": [
+    {
+      "library": "lige",
+      "index": "lige.json",
+      "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json",
+      "fallback_source": false,
+      "source_errors": [],
+      "total": 590,
+      "mirrored": 590,
+      "original_urls_retained": 0,
+      "errors": []
+    },
+    {
+      "library": "tfel",
+      "index": "tfel.json",
+      "source_used": "https://emby-icon.vercel.app/TFEL-Emby.json",
+      "fallback_source": false,
+      "source_errors": [],
+      "total": 542,
+      "mirrored": 541,
+      "original_urls_retained": 1,
+      "errors": [
+        {
+          "index": 439,
+          "name": "Juhaokan_1",
+          "url": "https://emby-icon.vercel.app/icons/Juhaokan_1.PNG",
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "library": "baitang-yuan",
+      "index": "baitang-yuan.json",
+      "source_used": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/tubiao.json",
+      "fallback_source": false,
+      "source_errors": [],
+      "total": 602,
+      "mirrored": 600,
+      "original_urls_retained": 2,
+      "errors": [
+        {
+          "index": 89,
+          "name": "Chuidab",
+          "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yaun/icon/Chuidab.png",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "index": 120,
+          "name": "Emosnsfw",
+          "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Emosnsfw.png",
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "library": "baitang-fang",
+      "index": "baitang-fang.json",
+      "source_used": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/tubiao.json",
+      "fallback_source": false,
+      "source_errors": [],
+      "total": 590,
+      "mirrored": 590,
+      "original_urls_retained": 0,
+      "errors": []
+    }
+  ]
+}
