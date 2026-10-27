@@ -1,0 +1,46 @@
+name: 同步 Emby 图标
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync_icons.py
+      - .github/workflows/sync.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: emby-icons-sync
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 获取清单和图片
+        id: sync
+        continue-on-error: true
+        run: python scripts/sync_icons.py
+      - name: 保存已成功获取的图标
+        if: always() && steps.sync.outcome != 'skipped'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for file in .icon-cache.json sync-status.json lige.json tfel.json baitang-yuan.json baitang-fang.json; do
+            if [ -f "$file" ]; then git add -- "$file"; fi
+          done
+          if [ -d images ]; then git add -A -- images/; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Emby icon libraries'
+            git push
+          fi
+      - name: 报告未完成的图片或来源
+        if: steps.sync.outcome == 'failure'
+        run: exit 1
