@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-27T03:48:01.629143+00:00",
+  "updated_at_utc": "2026-10-27T03:57:06.391415+00:00",
   "libraries": [
     {
       "library": "lige",
@@ -7,9 +7,11 @@
       "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json",
       "fallback_source": false,
       "source_errors": [],
+      "source_total": 590,
       "total": 590,
       "mirrored": 590,
       "cached_images_retained": 0,
+      "older_entries_preserved": 0,
       "original_urls_retained": 0,
       "repaired_sources": [],
       "errors": []
@@ -20,9 +22,11 @@
       "source_used": "https://emby-icon.vercel.app/TFEL-Emby.json",
       "fallback_source": false,
       "source_errors": [],
+      "source_total": 542,
       "total": 542,
       "mirrored": 541,
       "cached_images_retained": 0,
+      "older_entries_preserved": 0,
       "original_urls_retained": 1,
       "repaired_sources": [],
       "errors": [
@@ -31,7 +35,8 @@
           "name": "Juhaokan_1",
           "url": "https://emby-icon.vercel.app/icons/Juhaokan_1.PNG",
           "error": "HTTP Error 404: Not Found",
-          "using_cached_copy": false
+          "using_cached_copy": false,
+          "matched_by": null
         }
       ]
     },
@@ -41,9 +46,11 @@
       "source_used": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/tubiao.json",
       "fallback_source": false,
       "source_errors": [],
+      "source_total": 602,
       "total": 602,
       "mirrored": 602,
       "cached_images_retained": 0,
+      "older_entries_preserved": 0,
       "original_urls_retained": 0,
       "repaired_sources": [
         {
@@ -65,9 +72,11 @@
       "source_used": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/tubiao.json",
       "fallback_source": false,
       "source_errors": [],
+      "source_total": 590,
       "total": 590,
       "mirrored": 590,
       "cached_images_retained": 0,
+      "older_entries_preserved": 0,
       "original_urls_retained": 0,
       "repaired_sources": [],
       "errors": []
