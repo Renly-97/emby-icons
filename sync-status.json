@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-27T02:29:55.945462+00:00",
+  "updated_at_utc": "2026-10-27T03:48:01.629143+00:00",
   "libraries": [
     {
       "library": "lige",
@@ -9,6 +9,7 @@
       "source_errors": [],
       "total": 590,
       "mirrored": 590,
+      "cached_images_retained": 0,
       "original_urls_retained": 0,
       "repaired_sources": [],
       "errors": []
@@ -21,6 +22,7 @@
       "source_errors": [],
       "total": 542,
       "mirrored": 541,
+      "cached_images_retained": 0,
       "original_urls_retained": 1,
       "repaired_sources": [],
       "errors": [
@@ -28,7 +30,8 @@
           "index": 439,
           "name": "Juhaokan_1",
           "url": "https://emby-icon.vercel.app/icons/Juhaokan_1.PNG",
-          "error": "HTTP Error 404: Not Found"
+          "error": "HTTP Error 404: Not Found",
+          "using_cached_copy": false
         }
       ]
     },
@@ -40,6 +43,7 @@
       "source_errors": [],
       "total": 602,
       "mirrored": 602,
+      "cached_images_retained": 0,
       "original_urls_retained": 0,
       "repaired_sources": [
         {
@@ -63,6 +67,7 @@
       "source_errors": [],
       "total": 590,
       "mirrored": 590,
+      "cached_images_retained": 0,
       "original_urls_retained": 0,
       "repaired_sources": [],
       "errors": []
