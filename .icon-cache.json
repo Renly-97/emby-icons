@@ -11603,5 +11603,17 @@
     "path": "images/baitang-fang/1700c24269a2efab25388e83cbcd4e0b429b91c21929d7d9235a8aa66c6f4759.png",
     "etag": "\"668830b1a30508692f15cca8f6d1ec55925c8f768e78a319cadb3d53ec63fbb1\"",
     "last_modified": null
+  },
+  "baitang-yuan|https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yaun/icon/Chuidab.png": {
+    "path": "images/baitang-yuan/ad43e5a080f457475b69d40e500366504ef3fc9f71f498ae2a3869e6104e8849.png",
+    "etag": "\"c0066569c307acfd7cc622b5b70348883bffdc58ecc2cebdf98886c6c71443c4\"",
+    "last_modified": null,
+    "source_used": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Chuidab.png"
+  },
+  "baitang-yuan|https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Emosnsfw.png": {
+    "path": "images/baitang-yuan/3bbda2ffdbbcbbd55a9bcad287efae398934ede740545d9340de5cda786baa16.png",
+    "etag": "\"a3bb06abe051207c6b3ce94a2d68d2a168924bd7291ec94a793ded4189c901e1\"",
+    "last_modified": null,
+    "source_used": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Fenglinwan.png"
   }
 }
