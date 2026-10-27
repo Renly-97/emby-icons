@@ -207,6 +207,13 @@ def run(root=Path(".")):
             has_failure = True
             print(f"{name}: index unavailable; previous index retained", flush=True)
             continue
+        display = {
+            "lige": ("Renly图标库（离歌）", "个人整理备份 · 原作者：离歌"),
+            "tfel": ("Renly图标库（TFEL）", "个人整理备份 · 原作者：TFEL"),
+            "baitang-yuan": ("Renly图标库（圆形）", "个人整理备份 · 原作者：白糖、Softlyx"),
+            "baitang-fang": ("Renly图标库（方形）", "个人整理备份 · 原作者：白糖、Softlyx"),
+        }
+        data["name"], data["description"] = display[name]
         entries = data["icons"]
         source_total = len(entries)
         old_by_name = previous_images(root, name, source["file"], raw_base)
