@@ -2,9 +2,11 @@
 """Mirror four Emby icon indexes and their images into this repository."""
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from collections import Counter
 from datetime import datetime, timezone
 from hashlib import sha256
 from pathlib import Path
+from threading import Lock
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
@@ -25,6 +27,7 @@ HEADERS = {"User-Agent": "Renly-Emby-Icons/1.0", "Accept": "*/*"}
 MAX_IMAGE_BYTES = 6 * 1024 * 1024
 MAX_INDEX_BYTES = 10 * 1024 * 1024
 WORKERS = 8
+IMAGE_WRITE_LOCK = Lock()
 
 # Verified repairs for the white-sugar index. The renamed file has the same
 # Git blob as the old name, so it preserves the original image bytes.
@@ -93,6 +96,32 @@ def json_write(path, data):
     tmp.replace(path)
 
 
+def valid_local_image(root, library, path):
+    pattern = rf"images/{re.escape(library)}/[0-9a-f]{{64}}\.[a-z0-9]+"
+    return isinstance(path, str) and re.fullmatch(pattern, path) is not None and (root / path).is_file()
+
+
+def previous_images(root, library, index_file, raw_base):
+    """Find usable prior copies without trusting external or arbitrary paths."""
+    try:
+        old = json.loads((root / index_file).read_text(encoding="utf-8"))
+        if not isinstance(old, dict) or not isinstance(old.get("icons"), list):
+            return {}
+    except (OSError, ValueError):
+        return {}
+    by_name = {}
+    for item in old["icons"]:
+        if not isinstance(item, dict) or not isinstance(item.get("name"), str):
+            continue
+        url = item.get("url") if isinstance(item.get("url"), str) else item.get("Url")
+        if not isinstance(url, str) or not url.startswith(raw_base):
+            continue
+        path = url[len(raw_base):]
+        if valid_local_image(root, library, path):
+            by_name.setdefault(item["name"], []).append((dict(item), path))
+    return by_name
+
+
 def get_index(source):
     problems = []
     for url in source["urls"]:
@@ -132,13 +161,23 @@ def get_image(root, library, url, previous):
     if status == 304 and old_file and old_file.is_file():
         return old_path, previous
     ext = image_extension(raw)
-    path = "images/" + library + "/" + sha256(url.encode("utf-8")).hexdigest() + ext
-    dest = root / path
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    if not dest.exists() or dest.read_bytes() != raw:
-        tmp = dest.with_suffix(dest.suffix + ".tmp")
-        tmp.write_bytes(raw)
-        tmp.replace(dest)
+    base_name = sha256(url.encode("utf-8")).hexdigest() + ext
+    with IMAGE_WRITE_LOCK:
+        path = "images/" + library + "/" + base_name
+        dest = root / path
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if dest.exists() and dest.read_bytes() != raw:
+            # Never overwrite previously saved bytes when an upstream image
+            # changes at the same URL; store a content-specific new version.
+            version = sha256(url.encode("utf-8") + b"\x00" + sha256(raw).digest()).hexdigest() + ext
+            path = "images/" + library + "/" + version
+            dest = root / path
+        if dest.exists() and dest.read_bytes() != raw:
+            raise RuntimeError("image content hash collision")
+        if not dest.exists():
+            tmp = dest.with_suffix(dest.suffix + ".tmp")
+            tmp.write_bytes(raw)
+            tmp.replace(dest)
     headers = {k.lower(): v for k, v in response_headers.items()}
     return path, {"path": path, "etag": headers.get("etag"), "last_modified": headers.get("last-modified"), "source_used": actual}
 
@@ -169,6 +208,9 @@ def run(root=Path(".")):
             print(f"{name}: index unavailable; previous index retained", flush=True)
             continue
         entries = data["icons"]
+        source_total = len(entries)
+        old_by_name = previous_images(root, name, source["file"], raw_base)
+        new_name_counts = Counter(item.get("name") for item in entries if isinstance(item, dict) and isinstance(item.get("name"), str))
         jobs = {}
         errors = []
         repairs = []
@@ -203,16 +245,44 @@ def run(root=Path(".")):
                     # self-hosted image with a broken upstream link.
                     previous = cache.get(cache_key, {})
                     old_path = previous.get("path") if isinstance(previous, dict) else None
-                    path_pattern = rf"images/{re.escape(name)}/[0-9a-f]{{64}}\.[a-z0-9]+"
-                    keep_cached = isinstance(old_path, str) and re.fullmatch(path_pattern, old_path) is not None and (root / old_path).is_file()
+                    keep_cached = valid_local_image(root, name, old_path)
+                    match_method = "original_url" if keep_cached else None
+                    icon_name = entries[index].get("name")
+                    candidates = old_by_name.get(icon_name, []) if isinstance(icon_name, str) else []
+                    if not keep_cached and new_name_counts.get(icon_name) == 1 and len(candidates) == 1:
+                        old_path = candidates[0][1]
+                        keep_cached = True
+                        match_method = "unique_icon_name"
                     if keep_cached:
                         entries[index][field] = raw_base + old_path
                         copied += 1
                         cached_retained += 1
-                    errors.append({"index": index, "name": entries[index].get("name"), "url": url, "error": str(exc), "using_cached_copy": keep_cached})
+                    errors.append({"index": index, "name": icon_name, "url": url, "error": str(exc), "using_cached_copy": keep_cached, "matched_by": match_method})
+        # If the upstream removes entries, retain their previous local copies.
+        # Ambiguous duplicate names are kept separately rather than guessed.
+        used_paths = set()
+        for item in entries:
+            if isinstance(item, dict):
+                url = item.get("url") if isinstance(item.get("url"), str) else item.get("Url")
+                if isinstance(url, str) and url.startswith(raw_base):
+                    used_paths.add(url[len(raw_base):])
+        failed_by_name = Counter(error.get("name") for error in errors if not error.get("using_cached_copy") and isinstance(error.get("name"), str))
+        preserved_entries = 0
+        for icon_name, old_items in old_by_name.items():
+            candidates = [(item, path) for item, path in old_items if path not in used_paths]
+            needed = max(0, len(old_items) - new_name_counts.get(icon_name, 0))
+            if len(old_items) > 1 or new_name_counts.get(icon_name, 0) > 1:
+                needed = max(needed, min(failed_by_name.get(icon_name, 0), len(candidates)))
+                if 0 < new_name_counts.get(icon_name, 0) < len(old_items) and len(candidates) == len(old_items):
+                    needed = len(candidates)
+            for old_item, path in candidates[:needed]:
+                entries.append(old_item)
+                used_paths.add(path)
+                copied += 1
+                preserved_entries += 1
         json_write(root / source["file"], data)
         has_failure = has_failure or bool(errors)
-        results.append({"library": name, "index": source["file"], "source_used": chosen_url, "fallback_source": chosen_url != source["urls"][0], "source_errors": attempts, "total": len(entries), "mirrored": copied, "cached_images_retained": cached_retained, "original_urls_retained": len(errors) - cached_retained, "repaired_sources": repairs, "errors": errors})
+        results.append({"library": name, "index": source["file"], "source_used": chosen_url, "fallback_source": chosen_url != source["urls"][0], "source_errors": attempts, "source_total": source_total, "total": len(entries), "mirrored": copied, "cached_images_retained": cached_retained, "older_entries_preserved": preserved_entries, "original_urls_retained": len(errors) - cached_retained, "repaired_sources": repairs, "errors": errors})
         print(f"{name}: {copied}/{len(entries)} mirrored, {len(errors)} failed", flush=True)
     json_write(cache_path, cache)
     json_write(root / "sync-status.json", {"updated_at_utc": datetime.now(timezone.utc).isoformat(), "libraries": results})
