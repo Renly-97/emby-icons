@@ -26,6 +26,13 @@ MAX_IMAGE_BYTES = 6 * 1024 * 1024
 MAX_INDEX_BYTES = 10 * 1024 * 1024
 WORKERS = 8
 
+# Verified repairs for two broken paths in the white-sugar round index.
+# The latter file was renamed upstream; its Git blob is byte-for-byte identical.
+REPAIRED_URLS = {
+    "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yaun/icon/Chuidab.png": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Chuidab.png",
+    "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Emosnsfw.png": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Fenglinwan.png",
+}
+
 
 def safe_url(value):
     """Encode non-ASCII paths without changing existing percent escapes."""
@@ -114,7 +121,14 @@ def get_image(root, library, url, previous):
             conditional["If-None-Match"] = previous["etag"]
         if previous.get("last_modified"):
             conditional["If-Modified-Since"] = previous["last_modified"]
-    raw, response_headers, status = read_url(actual, MAX_IMAGE_BYTES, conditional)
+    try:
+        raw, response_headers, status = read_url(actual, MAX_IMAGE_BYTES, conditional)
+    except RuntimeError as exc:
+        corrected = REPAIRED_URLS.get(url)
+        if not corrected or "HTTP Error 404" not in str(exc):
+            raise
+        actual = corrected
+        raw, response_headers, status = read_url(actual, MAX_IMAGE_BYTES, conditional)
     if status == 304 and old_file and old_file.is_file():
         return old_path, previous
     ext = image_extension(raw)
@@ -126,7 +140,7 @@ def get_image(root, library, url, previous):
         tmp.write_bytes(raw)
         tmp.replace(dest)
     headers = {k.lower(): v for k, v in response_headers.items()}
-    return path, {"path": path, "etag": headers.get("etag"), "last_modified": headers.get("last-modified")}
+    return path, {"path": path, "etag": headers.get("etag"), "last_modified": headers.get("last-modified"), "source_used": actual}
 
 
 def run(root=Path(".")):
@@ -157,6 +171,7 @@ def run(root=Path(".")):
         entries = data["icons"]
         jobs = {}
         errors = []
+        repairs = []
         with ThreadPoolExecutor(max_workers=WORKERS) as pool:
             for index, item in enumerate(entries):
                 if not isinstance(item, dict):
@@ -177,6 +192,8 @@ def run(root=Path(".")):
                     path, metadata = future.result()
                     entries[index][field] = raw_base + path
                     cache[cache_key] = metadata
+                    if metadata.get("source_used") and metadata["source_used"] != url:
+                        repairs.append({"name": entries[index].get("name"), "original_url": url, "source_used": metadata["source_used"]})
                     copied += 1
                     if copied % 100 == 0:
                         print(f"{name}: {copied}/{len(entries)} images", flush=True)
@@ -185,7 +202,7 @@ def run(root=Path(".")):
                     errors.append({"index": index, "name": entries[index].get("name"), "url": url, "error": str(exc)})
         json_write(root / source["file"], data)
         has_failure = has_failure or bool(errors)
-        results.append({"library": name, "index": source["file"], "source_used": chosen_url, "fallback_source": chosen_url != source["urls"][0], "source_errors": attempts, "total": len(entries), "mirrored": copied, "original_urls_retained": len(errors), "errors": errors})
+        results.append({"library": name, "index": source["file"], "source_used": chosen_url, "fallback_source": chosen_url != source["urls"][0], "source_errors": attempts, "total": len(entries), "mirrored": copied, "original_urls_retained": len(errors), "repaired_sources": repairs, "errors": errors})
         print(f"{name}: {copied}/{len(entries)} mirrored, {len(errors)} failed", flush=True)
     json_write(cache_path, cache)
     json_write(root / "sync-status.json", {"updated_at_utc": datetime.now(timezone.utc).isoformat(), "libraries": results})
