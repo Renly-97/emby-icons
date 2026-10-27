@@ -26,12 +26,11 @@ MAX_IMAGE_BYTES = 6 * 1024 * 1024
 MAX_INDEX_BYTES = 10 * 1024 * 1024
 WORKERS = 8
 
-# Two verified repairs for the white-sugar index. For TFEL, the naming
-# pattern suggests a possible missing underscore; record the actual source.
+# Verified repairs for the white-sugar index. The renamed file has the same
+# Git blob as the old name, so it preserves the original image bytes.
 REPAIRED_URLS = {
     "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yaun/icon/Chuidab.png": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Chuidab.png",
     "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Emosnsfw.png": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Fenglinwan.png",
-    "https://emby-icon.vercel.app/icons/Juhaokan_1.PNG": "https://emby-icon.vercel.app/icons/Juhaokan1.PNG",
 }
 
 
