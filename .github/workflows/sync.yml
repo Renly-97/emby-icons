@@ -2,6 +2,9 @@ name: 同步 Emby 图标
 
 on:
   workflow_dispatch:
+  # UTC Sunday 20:17 = Beijing Monday 04:17.
+  schedule:
+    - cron: '17 20 * * 0'
   push:
     branches: [main]
     paths:

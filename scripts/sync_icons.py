@@ -172,6 +172,7 @@ def run(root=Path(".")):
         jobs = {}
         errors = []
         repairs = []
+        cached_retained = 0
         with ThreadPoolExecutor(max_workers=WORKERS) as pool:
             for index, item in enumerate(entries):
                 if not isinstance(item, dict):
@@ -198,11 +199,20 @@ def run(root=Path(".")):
                     if copied % 100 == 0:
                         print(f"{name}: {copied}/{len(entries)} images", flush=True)
                 except Exception as exc:
-                    # Keep the original URL rather than silently introduce a broken link.
-                    errors.append({"index": index, "name": entries[index].get("name"), "url": url, "error": str(exc)})
+                    # A transient origin failure must not replace a working
+                    # self-hosted image with a broken upstream link.
+                    previous = cache.get(cache_key, {})
+                    old_path = previous.get("path") if isinstance(previous, dict) else None
+                    path_pattern = rf"images/{re.escape(name)}/[0-9a-f]{{64}}\.[a-z0-9]+"
+                    keep_cached = isinstance(old_path, str) and re.fullmatch(path_pattern, old_path) is not None and (root / old_path).is_file()
+                    if keep_cached:
+                        entries[index][field] = raw_base + old_path
+                        copied += 1
+                        cached_retained += 1
+                    errors.append({"index": index, "name": entries[index].get("name"), "url": url, "error": str(exc), "using_cached_copy": keep_cached})
         json_write(root / source["file"], data)
         has_failure = has_failure or bool(errors)
-        results.append({"library": name, "index": source["file"], "source_used": chosen_url, "fallback_source": chosen_url != source["urls"][0], "source_errors": attempts, "total": len(entries), "mirrored": copied, "original_urls_retained": len(errors), "repaired_sources": repairs, "errors": errors})
+        results.append({"library": name, "index": source["file"], "source_used": chosen_url, "fallback_source": chosen_url != source["urls"][0], "source_errors": attempts, "total": len(entries), "mirrored": copied, "cached_images_retained": cached_retained, "original_urls_retained": len(errors) - cached_retained, "repaired_sources": repairs, "errors": errors})
         print(f"{name}: {copied}/{len(entries)} mirrored, {len(errors)} failed", flush=True)
     json_write(cache_path, cache)
     json_write(root / "sync-status.json", {"updated_at_utc": datetime.now(timezone.utc).isoformat(), "libraries": results})
