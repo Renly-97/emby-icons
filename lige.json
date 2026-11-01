@@ -399,6 +399,10 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/b742bdcfd55c5c2fb33cc74f8ce2effcaa2ca18300a86ea6538a7ba50a90c7df.png"
     },
     {
+      "name": "chencheng(2)-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/8ea1f2272fc9730b19f62c25c438e3ec21b152106a50dca5b8dbba7624242553.png"
+    },
+    {
       "name": "chencheng-emby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/98e59a2838d5cac51933750466da5ffeeeb403f8002eef1d97546578ba05e808.png"
     },
@@ -451,12 +455,12 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/64e4ed0e4a5eb3f20be7f5a4d3cc7a1a6baf6afc5264cdfe5211ebebf19e16b9.png"
     },
     {
-      "name": "cloud-emby",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/3c0536fec06a087b50863fcca1fd1120ac319154c4fbc1b9d25392074429ddf6.png"
-    },
-    {
       "name": "Cloud-emby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/2dc622645954d6b1518b42be7a079c3903be0c2dc1394052bf291b823fd08946.png"
+    },
+    {
+      "name": "cloud-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/3c0536fec06a087b50863fcca1fd1120ac319154c4fbc1b9d25392074429ddf6.png"
     },
     {
       "name": "Club-emby",
@@ -1483,12 +1487,12 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/a00856ea17c58a7ca8cc9e5b5246207627b53312206c972a032f3f1950b4e1a4.png"
     },
     {
-      "name": "pandatv-emby",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/4bb70b52f317bb3009794d878b0424b28f9cffa658556f58b45b205779fa0c09.png"
-    },
-    {
       "name": "pandaTV-emby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/2a3656e1008556cf4a4663ea241f35906db0827119c50651550403baba37056b.png"
+    },
+    {
+      "name": "pandatv-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/4bb70b52f317bb3009794d878b0424b28f9cffa658556f58b45b205779fa0c09.png"
     },
     {
       "name": "pandaxiongmao-emby",

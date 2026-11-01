@@ -11615,5 +11615,227 @@
     "etag": "\"a3bb06abe051207c6b3ce94a2d68d2a168924bd7291ec94a793ded4189c901e1\"",
     "last_modified": null,
     "source_used": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Fenglinwan.png"
+  },
+  "lige|https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/chencheng(2)-emby.png": {
+    "path": "images/lige/8ea1f2272fc9730b19f62c25c438e3ec21b152106a50dca5b8dbba7624242553.png",
+    "etag": "\"0159ecbbb865e7c121a4975613487987ffb855a3055d32c77e7e4bedec4e351b\"",
+    "last_modified": null,
+    "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/chencheng(2)-emby.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Lumen1.png": {
+    "path": "images/tfel/3c59d5aa97b4859840afd00d0741c23aebdc9ddc57b38cc0edbb6e6f3c564a36.png",
+    "etag": "\"3ee786ee1a8461ba4bf5ad8f11396708\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:00 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Lumen1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Lumen2.png": {
+    "path": "images/tfel/bae4e543a1e574fd14506efe43b9bbc75e656342aee1c729b4bd6d2fdcc2df01.png",
+    "etag": "\"adbdcf54ba1e1a6a4859ebee2c32588f\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:00 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Lumen2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Lumen.png": {
+    "path": "images/tfel/5b8fc15acf68ad1c2c789fdc8a7a0da5b93d87f6be1895b449720cbd7658a68a.png",
+    "etag": "\"fd61bc078e25b7ea677f6152da5b66bd\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:00 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Lumen.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Juhaokan_1.png": {
+    "path": "images/tfel/e12baade74f897ea0aca36a018e070e9c6340b478fee4277285a37a1c9a2dd9e.png",
+    "etag": "\"dd2a49c83c2079e91709758c48b964fd\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:38 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Juhaokan_1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/AVDB.png": {
+    "path": "images/tfel/75fcb891d91587e7ab60e34c05887b902e8883eea936ad9be74ef8dae23d87b6.png",
+    "etag": "\"b302f4f3749955013d0371423f2a4f69\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:41 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/AVDB.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/AVDB1.png": {
+    "path": "images/tfel/d8a3502e95a721420ed06fbdee649ae58499fc9a591976efd338dfd778099faf.png",
+    "etag": "\"6603fc5c356d763dda3ccf46266fbf18\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:41 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/AVDB1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/AVDB2.png": {
+    "path": "images/tfel/005a0894805bec1389eafe02446d634728d2b080ee9d4ce2a7c37b0113dda724.png",
+    "etag": "\"bfb5ce9169eb7315a95cb22eab8bc0cb\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:41 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/AVDB2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Hongguo1.png": {
+    "path": "images/tfel/61b5e77999b4eb1b6ec5fb39792e491cf76268e8df75b380a322ff26aaece6c6.png",
+    "etag": "\"227e96923370934e83fe67ae440ca6ba\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:44 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Hongguo1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Hongguo.png": {
+    "path": "images/tfel/46d5802049e64e49bb16109aa81be6ba359df1b0daa7f7b57cea62bded4a4e06.png",
+    "etag": "\"ac67ccaaa0bf17e213e6f16820a4d5a9\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:44 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Hongguo.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Hongguo2.png": {
+    "path": "images/tfel/8a4d686a035daf64c8ce0de47dbd5ec18f7dad9fd8fdf77e177fe674c2ed9237.png",
+    "etag": "\"58a2ed025f0ba148044709f4045f5341\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:45 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Hongguo2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Huya1.png": {
+    "path": "images/tfel/2917c88fa4af4ec5ed38f59ab257564f0257ff8e9d517d77c862704866d8c323.png",
+    "etag": "\"183d8578389c7590e5921d16b9ed337f\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:46 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Huya1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Hongguo_Man.png": {
+    "path": "images/tfel/2fcbfbe1884520b437589499efd05dbf577a5df09f31481276902ecc9fe02cec.png",
+    "etag": "\"7613c34181f8fdbb7d2f14836ac70a61\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:45 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Hongguo_Man.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Huya2.png": {
+    "path": "images/tfel/21a25ea12899eac203aa8b8fdaafebd698465c76939b58d6b1f8837bc8c744ca.png",
+    "etag": "\"ac93dce985cf82cb48be981499d9d3ca\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:46 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Huya2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Huya.png": {
+    "path": "images/tfel/192d83aee15a39ae73fd36cdb902c5bc0a8c0918821777d7c7929542edbe799a.png",
+    "etag": "\"54f23813d8260a1e06aa6f86d30cb8e8\"",
+    "last_modified": "Sun, 01 Nov 2026 23:38:11 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Huya.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/NetEase2.png": {
+    "path": "images/tfel/571ee45abf80973dce56e58a74ce35bab03fab40064b9b6a30c3e6d7623120a9.png",
+    "etag": "\"e3cc8364d0726eaa953574a570a1f819\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:48 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/NetEase2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/NetEase.png": {
+    "path": "images/tfel/34b2e43c269a29fd4b5b67327e3653d6cfe76e52555e11b5c6340186b1ebee28.png",
+    "etag": "\"87e817a15601ac95a10abd9d40d89796\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:47 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/NetEase.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/NetEase1.png": {
+    "path": "images/tfel/a5ad514b48e016fe74cd3638a6e98cf48c6e5e3f021a63a7466d4c02c86f5a0d.png",
+    "etag": "\"f3acaa827cb53b49702ff00678a1f466\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:48 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/NetEase1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/QQmusic.png": {
+    "path": "images/tfel/d5a69b74969604d5cadafbd6a61c5c3176bdf4030672b33ca659d7fe8bb2ad67.png",
+    "etag": "\"7e303fcb68bfc1012d8638adc618ca98\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:48 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/QQmusic.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/QQmusic2.png": {
+    "path": "images/tfel/238d9bfa322a373cf8991fe21ece935ec76057d8f04340a80e36de9e62d3f7a8.png",
+    "etag": "\"32155e0f59e8894cf10888c80e3a830e\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:48 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/QQmusic2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Rex.png": {
+    "path": "images/tfel/42f9dd0213d077993c333bb7cd3587ac00d29e07a05045005fadf74b1450efab.png",
+    "etag": "\"05670d5fe8f18de7bef19251f39bf918\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:49 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Rex.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/QQmusic1.png": {
+    "path": "images/tfel/1b51088b5b77b940d9042e4558648862107e570c4318a1d6a6f9f5be71c2dde7.png",
+    "etag": "\"92c12f52049686daacc235657c1b6a80\"",
+    "last_modified": "Sun, 01 Nov 2026 23:38:12 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/QQmusic1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Rex1.png": {
+    "path": "images/tfel/b21ed84efa29504e8bf920dd6a9af0259c19000bd057589a10257a561ed8c2a0.png",
+    "etag": "\"f91fa1e8ab4092af23b50e1963f03758\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:49 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Rex1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Rex4.png": {
+    "path": "images/tfel/a6217f03d771f3d8c3bca6752e625b0cbd4dc9ec040010c3bd99e768fa18fb99.png",
+    "etag": "\"0f7cca7985fd3dd8b22dd741a9c47dac\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:50 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Rex4.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Rex5.png": {
+    "path": "images/tfel/23e6b61d264afc6dae52b7caa25b2e0c36176742ba4742222f798667bb46e9ba.png",
+    "etag": "\"7a893ebc0132a24579bfb8f7050c6637\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:50 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Rex5.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Rex2.png": {
+    "path": "images/tfel/71187f4345a7a2f135621317b9a8ee45ab584fa1c73ab2e5d818c998c0e4e1a5.png",
+    "etag": "\"6098f2013bdee5d930cf0241b4df640f\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:49 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Rex2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Tangxin.png": {
+    "path": "images/tfel/73aedd11e37941241da24819b0fcfba84e75e0b1102a5f0a1134cee0bd20b073.png",
+    "etag": "\"9181a3e00463b56c86b8a217af128d5e\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:51 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Tangxin.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Rex3.png": {
+    "path": "images/tfel/5e6632b4a24845b17e3c2797a71df1f91f57f6b9033a06fe0ae8d3398ec2aac1.png",
+    "etag": "\"9ca288ad8155fffe4b0a30b11aebe242\"",
+    "last_modified": "Sun, 01 Nov 2026 23:38:12 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Rex3.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Tangxin2.png": {
+    "path": "images/tfel/797743796e030e4ad265df57ea240a50eb2a2bad4f3a0c243ced8f9e516c8678.png",
+    "etag": "\"bcc7649cbd41f7fa2a8dcf49ca72a3ca\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:51 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Tangxin2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Rex6.png": {
+    "path": "images/tfel/3ee97dcbc9b4ddebfe78428cd1b82491fa86b9558673d14089b8284eb6cdf4fb.png",
+    "etag": "\"c16bd60bfd50cf9144de0eed0032c933\"",
+    "last_modified": "Sun, 01 Nov 2026 23:38:12 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Rex6.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/Tangxin1.png": {
+    "path": "images/tfel/8f91a612c8f047d4776a10b4bc3945634111dc77e1a288c02a83e644cfad5634.png",
+    "etag": "\"0f47863ad7f282ee063bed646098dce2\"",
+    "last_modified": "Sun, 01 Nov 2026 23:38:12 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/Tangxin1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/TikTok2.png": {
+    "path": "images/tfel/3a6b5acf4464da9c0b84e1925ae04f0eef954f5ddfd30f1d201d7ee46fef3437.png",
+    "etag": "\"ab1f708499af210ed119b38da0059846\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:52 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/TikTok2.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/TikTok1.png": {
+    "path": "images/tfel/908f39dc3fd893bb2105231a155924d6c956acd34deeda00bd23ce73b3008f15.png",
+    "etag": "\"06fbd022381ccd0de27cc995ebe624cc\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:52 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/TikTok1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/TikTok.png": {
+    "path": "images/tfel/258cec236bdebfefa76780790f1ee20d5536eda2eeedcd4edce3482d79f001cc.png",
+    "etag": "\"1380895990339eca4bca478de1194ac9\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:52 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/TikTok.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/YouTube.png": {
+    "path": "images/tfel/01b51edc23a9b54b2772fa278dcad72d726c08609f9f9edffdcd0e4e2a1c8dcc.png",
+    "etag": "\"5f5661a4384f3f1fa23837f7a4cfb7da\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:53 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/YouTube.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/YouTube1.png": {
+    "path": "images/tfel/bb072ad13d233a8c42e2f6785fc4e3db02c0a4a41c6fc0af7e805a76b3bc2174.png",
+    "etag": "\"3ad474117ecb8f344befc7129a2c072e\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:53 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/YouTube1.png"
+  },
+  "tfel|https://emby-icon.vercel.app/icons/YouTube2.png": {
+    "path": "images/tfel/a8dff6ff9b29c32db426fa4f099ad6111e51ea8335be7d911442beee276f616d.png",
+    "etag": "\"0ee351639d86412371c2b88a84d5c176\"",
+    "last_modified": "Sat, 31 Oct 2026 03:27:53 GMT",
+    "source_used": "https://emby-icon.vercel.app/icons/YouTube2.png"
   }
 }

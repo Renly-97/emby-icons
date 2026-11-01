@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-27T04:32:06.047622+00:00",
+  "updated_at_utc": "2026-11-01T23:38:36.792605+00:00",
   "libraries": [
     {
       "library": "lige",
@@ -7,9 +7,9 @@
       "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json",
       "fallback_source": false,
       "source_errors": [],
-      "source_total": 590,
-      "total": 590,
-      "mirrored": 590,
+      "source_total": 591,
+      "total": 591,
+      "mirrored": 591,
       "cached_images_retained": 0,
       "older_entries_preserved": 0,
       "original_urls_retained": 0,
@@ -22,23 +22,14 @@
       "source_used": "https://emby-icon.vercel.app/TFEL-Emby.json",
       "fallback_source": false,
       "source_errors": [],
-      "source_total": 542,
-      "total": 542,
-      "mirrored": 541,
+      "source_total": 572,
+      "total": 577,
+      "mirrored": 577,
       "cached_images_retained": 0,
-      "older_entries_preserved": 0,
-      "original_urls_retained": 1,
+      "older_entries_preserved": 5,
+      "original_urls_retained": 0,
       "repaired_sources": [],
-      "errors": [
-        {
-          "index": 439,
-          "name": "Juhaokan_1",
-          "url": "https://emby-icon.vercel.app/icons/Juhaokan_1.PNG",
-          "error": "HTTP Error 404: Not Found",
-          "using_cached_copy": false,
-          "matched_by": null
-        }
-      ]
+      "errors": []
     },
     {
       "library": "baitang-yuan",

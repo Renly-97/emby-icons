@@ -739,6 +739,18 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/fef00b5f937a69efa9c4dac033c0a69316666eb24dfdc6105bab0dae9a257462.png"
     },
     {
+      "name": "Lumen",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/5b8fc15acf68ad1c2c789fdc8a7a0da5b93d87f6be1895b449720cbd7658a68a.png"
+    },
+    {
+      "name": "Lumen_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/3c59d5aa97b4859840afd00d0741c23aebdc9ddc57b38cc0edbb6e6f3c564a36.png"
+    },
+    {
+      "name": "Lumen_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/bae4e543a1e574fd14506efe43b9bbc75e656342aee1c729b4bd6d2fdcc2df01.png"
+    },
+    {
       "name": "Lunaris",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/d707d19bfe9add827d02da4f8133768a0fd1a6445f8bdb89aa5682cc6d5d8b18.png"
     },
@@ -1760,7 +1772,7 @@
     },
     {
       "name": "Juhaokan_1",
-      "url": "https://emby-icon.vercel.app/icons/Juhaokan_1.PNG"
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/e12baade74f897ea0aca36a018e070e9c6340b478fee4277285a37a1c9a2dd9e.png"
     },
     {
       "name": "LianLian",
@@ -1835,6 +1847,18 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/591cadba4089ba6020b6f4311eed4904c4f99017758dcbccce189a7413ab271d.png"
     },
     {
+      "name": "AVDB",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/75fcb891d91587e7ab60e34c05887b902e8883eea936ad9be74ef8dae23d87b6.png"
+    },
+    {
+      "name": "AVDB_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/d8a3502e95a721420ed06fbdee649ae58499fc9a591976efd338dfd778099faf.png"
+    },
+    {
+      "name": "AVDB_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/005a0894805bec1389eafe02446d634728d2b080ee9d4ce2a7c37b0113dda724.png"
+    },
+    {
       "name": "Drivemby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/8f8ed8825424e4362ac73dc6dbea6a9c98928e682e75e0eb38ebd5411ddac899.png"
     },
@@ -1863,24 +1887,108 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/ea9af6ff05c4770e486a1c8b63832c45c0645c908719b8b218bdddfaea281da8.png"
     },
     {
-      "name": "REX",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/1056245c39460ba9c8a278ae13a6c4843351bf315b28055ff5cb28dcd4cf6fff.png"
+      "name": "Hongguo",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/46d5802049e64e49bb16109aa81be6ba359df1b0daa7f7b57cea62bded4a4e06.png"
     },
     {
-      "name": "REX_1",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/0e991c33c5a13ecd8ea35c19266b3bf53cf5b5d291e0ee74db1d96881390f5cb.png"
+      "name": "Hongguo_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/61b5e77999b4eb1b6ec5fb39792e491cf76268e8df75b380a322ff26aaece6c6.png"
     },
     {
-      "name": "REX_2",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/eb260ee25ac0ea20af3472f9c714d163bc1bac130c99bf093d327f0b36f7c681.png"
+      "name": "Hongguo_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/8a4d686a035daf64c8ce0de47dbd5ec18f7dad9fd8fdf77e177fe674c2ed9237.png"
     },
     {
-      "name": "REX_3",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/61acb842bbc083047b53dc79b1d2789e811e292febe47ab4f4d25f16d6ee17d7.png"
+      "name": "Hongguo_Man",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/2fcbfbe1884520b437589499efd05dbf577a5df09f31481276902ecc9fe02cec.png"
     },
     {
-      "name": "REX_4",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/caeb358e7a2ef7d34ce86d084e716d74d4100c3d8d3d32711f46abfe88d3153d.png"
+      "name": "Huya",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/192d83aee15a39ae73fd36cdb902c5bc0a8c0918821777d7c7929542edbe799a.png"
+    },
+    {
+      "name": "Huya_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/2917c88fa4af4ec5ed38f59ab257564f0257ff8e9d517d77c862704866d8c323.png"
+    },
+    {
+      "name": "Huya_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/21a25ea12899eac203aa8b8fdaafebd698465c76939b58d6b1f8837bc8c744ca.png"
+    },
+    {
+      "name": "NetEase",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/34b2e43c269a29fd4b5b67327e3653d6cfe76e52555e11b5c6340186b1ebee28.png"
+    },
+    {
+      "name": "NetEase_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/a5ad514b48e016fe74cd3638a6e98cf48c6e5e3f021a63a7466d4c02c86f5a0d.png"
+    },
+    {
+      "name": "NetEase_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/571ee45abf80973dce56e58a74ce35bab03fab40064b9b6a30c3e6d7623120a9.png"
+    },
+    {
+      "name": "QQmusic",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/d5a69b74969604d5cadafbd6a61c5c3176bdf4030672b33ca659d7fe8bb2ad67.png"
+    },
+    {
+      "name": "QQmusic_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/1b51088b5b77b940d9042e4558648862107e570c4318a1d6a6f9f5be71c2dde7.png"
+    },
+    {
+      "name": "QQmusic_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/238d9bfa322a373cf8991fe21ece935ec76057d8f04340a80e36de9e62d3f7a8.png"
+    },
+    {
+      "name": "Rex",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/42f9dd0213d077993c333bb7cd3587ac00d29e07a05045005fadf74b1450efab.png"
+    },
+    {
+      "name": "Rex_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/b21ed84efa29504e8bf920dd6a9af0259c19000bd057589a10257a561ed8c2a0.png"
+    },
+    {
+      "name": "Rex_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/71187f4345a7a2f135621317b9a8ee45ab584fa1c73ab2e5d818c998c0e4e1a5.png"
+    },
+    {
+      "name": "Rex_3",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/5e6632b4a24845b17e3c2797a71df1f91f57f6b9033a06fe0ae8d3398ec2aac1.png"
+    },
+    {
+      "name": "Rex_4",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/a6217f03d771f3d8c3bca6752e625b0cbd4dc9ec040010c3bd99e768fa18fb99.png"
+    },
+    {
+      "name": "Rex_5",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/23e6b61d264afc6dae52b7caa25b2e0c36176742ba4742222f798667bb46e9ba.png"
+    },
+    {
+      "name": "Rex_6",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/3ee97dcbc9b4ddebfe78428cd1b82491fa86b9558673d14089b8284eb6cdf4fb.png"
+    },
+    {
+      "name": "Tangxin",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/73aedd11e37941241da24819b0fcfba84e75e0b1102a5f0a1134cee0bd20b073.png"
+    },
+    {
+      "name": "Tangxin_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/8f91a612c8f047d4776a10b4bc3945634111dc77e1a288c02a83e644cfad5634.png"
+    },
+    {
+      "name": "Tangxin_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/797743796e030e4ad265df57ea240a50eb2a2bad4f3a0c243ced8f9e516c8678.png"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/258cec236bdebfefa76780790f1ee20d5536eda2eeedcd4edce3482d79f001cc.png"
+    },
+    {
+      "name": "TikTok_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/908f39dc3fd893bb2105231a155924d6c956acd34deeda00bd23ce73b3008f15.png"
+    },
+    {
+      "name": "TikTok_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/3a6b5acf4464da9c0b84e1925ae04f0eef954f5ddfd30f1d201d7ee46fef3437.png"
     },
     {
       "name": "Vvebo",
@@ -1893,6 +2001,18 @@
     {
       "name": "Vvebo_2",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/8c10ef451f65bc7de3c88936d16e27b484339385f8bfdcf567ca477e38113c87.png"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/01b51edc23a9b54b2772fa278dcad72d726c08609f9f9edffdcd0e4e2a1c8dcc.png"
+    },
+    {
+      "name": "YouTube_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/bb072ad13d233a8c42e2f6785fc4e3db02c0a4a41c6fc0af7e805a76b3bc2174.png"
+    },
+    {
+      "name": "YouTube_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/a8dff6ff9b29c32db426fa4f099ad6111e51ea8335be7d911442beee276f616d.png"
     },
     {
       "name": "Emby",
@@ -2169,6 +2289,26 @@
     {
       "name": "Workingtitle_1",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/436d733d9bae03168ea722d043d9b1bc3648cb6801af57204ed4af6f7315b20d.png"
+    },
+    {
+      "name": "REX",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/1056245c39460ba9c8a278ae13a6c4843351bf315b28055ff5cb28dcd4cf6fff.png"
+    },
+    {
+      "name": "REX_1",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/0e991c33c5a13ecd8ea35c19266b3bf53cf5b5d291e0ee74db1d96881390f5cb.png"
+    },
+    {
+      "name": "REX_2",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/eb260ee25ac0ea20af3472f9c714d163bc1bac130c99bf093d327f0b36f7c681.png"
+    },
+    {
+      "name": "REX_3",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/61acb842bbc083047b53dc79b1d2789e811e292febe47ab4f4d25f16d6ee17d7.png"
+    },
+    {
+      "name": "REX_4",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/tfel/caeb358e7a2ef7d34ce86d084e716d74d4100c3d8d3d32711f46abfe88d3153d.png"
     }
   ]
 }
