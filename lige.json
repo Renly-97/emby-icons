@@ -455,12 +455,12 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/64e4ed0e4a5eb3f20be7f5a4d3cc7a1a6baf6afc5264cdfe5211ebebf19e16b9.png"
     },
     {
-      "name": "Cloud-emby",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/2dc622645954d6b1518b42be7a079c3903be0c2dc1394052bf291b823fd08946.png"
-    },
-    {
       "name": "cloud-emby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/3c0536fec06a087b50863fcca1fd1120ac319154c4fbc1b9d25392074429ddf6.png"
+    },
+    {
+      "name": "Cloud-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/2dc622645954d6b1518b42be7a079c3903be0c2dc1394052bf291b823fd08946.png"
     },
     {
       "name": "Club-emby",
@@ -757,6 +757,14 @@
     {
       "name": "guaiporn-emby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/34d4ac63aeea0b143e7a6883e372ad5f128fec6cabbbbd08b383a846362445bd.png"
+    },
+    {
+      "name": "guangyin(1)-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/421eb12363300a7fd473c6f0f539402566f5a4bb7eb43d5e15fd3c2f9fa9ae66.png"
+    },
+    {
+      "name": "guangyin-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/296f49190c9790d7306605b08acea49f34dc4029264292af389f2a2836530aba.png"
     },
     {
       "name": "gugu-emby",
@@ -1323,6 +1331,10 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/953af6f8163d1fea197dfe4462e7cd3909aca81a811f67af7f7bd5ad7eff4e07.png"
     },
     {
+      "name": "Navyouqu9527-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/4ec578ac68c1e79f851eeda11a9098945e06468c244f86d5a19f27c1149af3d5.png"
+    },
+    {
       "name": "nayovo-emby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/ad0bfb3344dd83a4d7f4a369e66b620299ff0373467676095b7edb8b165a03ef.png"
     },
@@ -1487,12 +1499,12 @@
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/a00856ea17c58a7ca8cc9e5b5246207627b53312206c972a032f3f1950b4e1a4.png"
     },
     {
-      "name": "pandaTV-emby",
-      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/2a3656e1008556cf4a4663ea241f35906db0827119c50651550403baba37056b.png"
-    },
-    {
       "name": "pandatv-emby",
       "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/4bb70b52f317bb3009794d878b0424b28f9cffa658556f58b45b205779fa0c09.png"
+    },
+    {
+      "name": "pandaTV-emby",
+      "url": "https://raw.githubusercontent.com/Renly-97/emby-icons/main/images/lige/2a3656e1008556cf4a4663ea241f35906db0827119c50651550403baba37056b.png"
     },
     {
       "name": "pandaxiongmao-emby",

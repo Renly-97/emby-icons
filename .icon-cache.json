@@ -11837,5 +11837,23 @@
     "etag": "\"0ee351639d86412371c2b88a84d5c176\"",
     "last_modified": "Sat, 31 Oct 2026 03:27:53 GMT",
     "source_used": "https://emby-icon.vercel.app/icons/YouTube2.png"
+  },
+  "lige|https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/guangyin(1)-emby.png": {
+    "path": "images/lige/421eb12363300a7fd473c6f0f539402566f5a4bb7eb43d5e15fd3c2f9fa9ae66.png",
+    "etag": "\"86d1fd50991671fbc107edd4a046aa094411169528b01ad1bddd91995f94004a\"",
+    "last_modified": null,
+    "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/guangyin(1)-emby.png"
+  },
+  "lige|https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/guangyin-emby.png": {
+    "path": "images/lige/296f49190c9790d7306605b08acea49f34dc4029264292af389f2a2836530aba.png",
+    "etag": "\"497b88316c02f6118ce0119ab743e31c547d6b6d87d860fa50eae2ec5e839262\"",
+    "last_modified": null,
+    "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/guangyin-emby.png"
+  },
+  "lige|https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/Navyouqu9527-emby.png": {
+    "path": "images/lige/4ec578ac68c1e79f851eeda11a9098945e06468c244f86d5a19f27c1149af3d5.png",
+    "etag": "\"42337455bb694885325d5d73550d7cbe09f07d594072005d09a2081be46663b9\"",
+    "last_modified": null,
+    "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/Navyouqu9527-emby.png"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-01T23:38:36.792605+00:00",
+  "updated_at_utc": "2026-11-08T23:44:52.082663+00:00",
   "libraries": [
     {
       "library": "lige",
@@ -7,9 +7,9 @@
       "source_used": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json",
       "fallback_source": false,
       "source_errors": [],
-      "source_total": 591,
-      "total": 591,
-      "mirrored": 591,
+      "source_total": 594,
+      "total": 594,
+      "mirrored": 594,
       "cached_images_retained": 0,
       "older_entries_preserved": 0,
       "original_urls_retained": 0,
